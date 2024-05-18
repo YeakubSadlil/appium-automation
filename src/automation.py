@@ -7,7 +7,7 @@ import time
 capabilities = {
     'platformName': 'Android',
     'automationName': 'uiautomator2',
-    'deviceName': 'R58N61ZKCWP',
+    'deviceName': '29291FDH300EP3',
     # 'platformVersion': '12.0',     # Optional - Remove this if you want to run on any Android version
     'appPackage': 'com.bKash.customerapp',
     'appActivity': 'com.bKash.customerapp.MainActivity',
@@ -35,7 +35,7 @@ time.sleep(1)
 try:
     pin_input_field = driver.find_element(
         By.ANDROID_UIAUTOMATOR, 
-        'new UiSelector().description("bKash PIN")'
+        'new UiSelector().description("| Enter bKash PIN")'
     ).click()
         
     print("Found PIN input field")
