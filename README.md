@@ -54,7 +54,7 @@ This project tried to automate the process of balance checking in the bKash app 
     ```
     python src/automation.py 
     ```
-
+**N.B.**  User should provide his bkash Pin and DeviceId on the `automatiom.py` script before running it
 ## Code Explanation
 
 The script follows steps below:
