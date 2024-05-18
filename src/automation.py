@@ -7,7 +7,7 @@ import time
 capabilities = {
     'platformName': 'Android',
     'automationName': 'uiautomator2',
-    'deviceName': '29291FDH300EP3',
+    'deviceName': 'deviceId',        # deviceid will be your device id by the command 'adb devices'
     # 'platformVersion': '12.0',     # Optional - Remove this if you want to run on any Android version
     'appPackage': 'com.bKash.customerapp',
     'appActivity': 'com.bKash.customerapp.MainActivity',
@@ -16,7 +16,7 @@ capabilities = {
     'autoGrantPermissions': True
 }
 
-your_pin = '12345'
+your_pin = 'Your_PIN'   # replace with your bKash PIN
 appium_server_url = 'http://localhost:4723'
 driver = webdriver.Remote(appium_server_url, options=UiAutomator2Options().load_capabilities(capabilities))
 
